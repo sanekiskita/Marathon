@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="g464_Shevelev__IllarionovDataSet" targetNamespace="http://tempuri.org/g464_Shevelev__IllarionovDataSet.xsd" xmlns:mstns="http://tempuri.org/g464_Shevelev__IllarionovDataSet.xsd" xmlns="http://tempuri.org/g464_Shevelev__IllarionovDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="g464_Shevelev__IllarionovConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="g464_Shevelev__IllarionovConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.schevelev_illarionov_beta_v1.Properties.Settings.GlobalReference.Default.g464_Shevelev__IllarionovConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="name runnerTableAdapter" GeneratorDataComponentClassName="name_runnerTableAdapter" Name="name runner" UserDataComponentName="name runnerTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="g464_Shevelev__IllarionovConnectionString (Settings)" DbObjectName="g464_Shevelev__Illarionov.dbo.[name runner]" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT DisplayName, RunnerId FROM dbo.[name runner]</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="DisplayName" DataSetColumn="DisplayName" />
+              <Mapping SourceColumn="RunnerId" DataSetColumn="RunnerId" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="g464_Shevelev__IllarionovDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="g464_Shevelev__IllarionovDataSet" msprop:Generator_UserDSName="g464_Shevelev__IllarionovDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="name_x0020_runner" msprop:Generator_TableClassName="name_runnerDataTable" msprop:Generator_TableVarName="tablename_runner" msprop:Generator_TablePropName="name_runner" msprop:Generator_RowDeletingName="name_runnerRowDeleting" msprop:Generator_RowChangingName="name_runnerRowChanging" msprop:Generator_RowEvHandlerName="name_runnerRowChangeEventHandler" msprop:Generator_RowDeletedName="name_runnerRowDeleted" msprop:Generator_UserTableName="name runner" msprop:Generator_RowChangedName="name_runnerRowChanged" msprop:Generator_RowEvArgName="name_runnerRowChangeEvent" msprop:Generator_RowClassName="name_runnerRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DisplayName" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnDisplayName" msprop:Generator_ColumnPropNameInRow="DisplayName" msprop:Generator_ColumnPropNameInTable="DisplayNameColumn" msprop:Generator_UserColumnName="DisplayName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="165" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RunnerId" msprop:Generator_ColumnVarNameInTable="columnRunnerId" msprop:Generator_ColumnPropNameInRow="RunnerId" msprop:Generator_ColumnPropNameInTable="RunnerIdColumn" msprop:Generator_UserColumnName="RunnerId" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:name_x0020_runner" />
+      <xs:field xpath="mstns:RunnerId" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
