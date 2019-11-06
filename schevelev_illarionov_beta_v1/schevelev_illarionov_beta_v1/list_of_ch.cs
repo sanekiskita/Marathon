@@ -82,6 +82,11 @@ namespace schevelev_illarionov_beta_v1
             Application.Exit();
         }
 
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
 
     }
 }

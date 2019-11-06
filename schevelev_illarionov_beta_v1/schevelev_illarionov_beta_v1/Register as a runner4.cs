@@ -66,15 +66,27 @@ namespace schevelev_illarionov_beta_v1
 
         private void button1_Click(object sender, EventArgs e)
         {
+            tb_file.ReadOnly=false;
             string filePath = "";
             OpenFileDialog ofd = new OpenFileDialog();
+            ofd.Filter = "Файлы изображений (*.bmp, *.jpg, *.png , *jpeg)|*.bmp;*.jpg;*.png;*.jpeg";
             if (ofd.ShowDialog() == DialogResult.OK)
             {
                 filePath = ofd.FileName;
             }
+            else
+            {
+                tb_file.ReadOnly = false;
+                tb_file.Text = "";
+                pictureBox1.ImageLocation = "";
+                return;
+            }
 
             tb_file.Text = filePath;
             pictureBox1.ImageLocation = filePath;
+            tb_file.ReadOnly = true;
         }
+
+       
     }
 }
