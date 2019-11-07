@@ -103,6 +103,8 @@
             this.tb_povtpass.PasswordChar = '*';
             this.tb_povtpass.Size = new System.Drawing.Size(213, 20);
             this.tb_povtpass.TabIndex = 56;
+            this.tb_povtpass.Enter += new System.EventHandler(this.tb_povtpass_Enter);
+            this.tb_povtpass.Leave += new System.EventHandler(this.tb_povtpass_Leave);
             // 
             // tb_Pass
             // 
@@ -111,6 +113,8 @@
             this.tb_Pass.PasswordChar = '*';
             this.tb_Pass.Size = new System.Drawing.Size(213, 20);
             this.tb_Pass.TabIndex = 55;
+            this.tb_Pass.Enter += new System.EventHandler(this.tb_Pass_Enter);
+            this.tb_Pass.Leave += new System.EventHandler(this.tb_Pass_Leave);
             // 
             // tb_email
             // 
@@ -118,6 +122,8 @@
             this.tb_email.Name = "tb_email";
             this.tb_email.Size = new System.Drawing.Size(213, 20);
             this.tb_email.TabIndex = 54;
+            this.tb_email.Enter += new System.EventHandler(this.tb_email_Enter);
+            this.tb_email.Leave += new System.EventHandler(this.tb_email_Leave);
             // 
             // label10
             // 
@@ -416,7 +422,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.exit);
-            this.MinimizeBox = false;
+            this.MaximizeBox = false;
             this.Name = "Register_as_a_runner4";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

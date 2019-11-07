@@ -150,6 +150,7 @@
             // t
             // 
             this.t.Enabled = true;
+            this.t.Tick += new System.EventHandler(this.t_Tick);
             // 
             // begun_login
             // 

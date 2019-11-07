@@ -40,6 +40,8 @@ namespace schevelev_illarionov_beta_v1
         {
             if ((tb_email.Text != null) && (tb_Pass.Text == tb_povtpass.Text) && (tb_Pass.Text != null) && (tb_name.Text != null) && (tb_lastname.Text != null))
             {
+
+
                 this.Hide();
                 Runner_menu mn_r = new Runner_menu();
                 mn_r.Show();
@@ -55,6 +57,25 @@ namespace schevelev_illarionov_beta_v1
             // TODO: This line of code loads data into the 'g464_Shevelev__IllarionovDataSet1.Gender' table. You can move, or remove it, as needed.
             this.genderTableAdapter.Fill(this.g464_Shevelev__IllarionovDataSet1.Gender);
 
+
+            int mou = Convert.ToInt32(DateTime.Now.Month);
+          int years = Convert.ToInt32(DateTime.Now.Year);
+          int days = Convert.ToInt32(DateTime.Now.Day);
+          years = years - 15;
+            DateTime date1 = new  DateTime(years,mou,days);
+            dtp_day.MaxDate=date1;
+
+            years = years - 100;
+            DateTime date2 = new DateTime(years, mou, days);
+            dtp_day.MinDate = date2;
+
+
+            tb_email.Text = "Введите email";
+            tb_email.ForeColor = Color.Gray;
+            tb_Pass.Text = "******";
+            tb_Pass.ForeColor = Color.Gray;
+            tb_povtpass.Text = "******";
+            tb_povtpass.ForeColor = Color.Gray;
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -85,6 +106,62 @@ namespace schevelev_illarionov_beta_v1
             tb_file.Text = filePath;
             pictureBox1.ImageLocation = filePath;
             tb_file.ReadOnly = true;
+        }
+
+ 
+
+        private void tb_email_Enter(object sender, EventArgs e)
+        {
+            if (tb_email.Text == "Введите email")
+            {
+                tb_email.Clear();
+                tb_email.ForeColor = Color.Black;
+            }
+        }
+
+        private void tb_email_Leave(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(tb_email.Text))
+            {
+                tb_email.Text = "Введите email";
+                tb_email.ForeColor = Color.Gray;
+            }
+        }
+
+        private void tb_Pass_Leave(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(tb_Pass.Text))
+            {
+                tb_Pass.Text = "******";
+                tb_Pass.ForeColor = Color.Gray;
+            }
+        }
+
+        private void tb_Pass_Enter(object sender, EventArgs e)
+        {
+            if (tb_Pass.Text == "******")
+            {
+                tb_Pass.Clear();
+                tb_Pass.ForeColor = Color.Black;
+            }
+        }
+
+        private void tb_povtpass_Leave(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(tb_povtpass.Text))
+            {
+                tb_povtpass.Text = "******";
+                tb_povtpass.ForeColor = Color.Gray;
+            }
+        }
+
+        private void tb_povtpass_Enter(object sender, EventArgs e)
+        {
+            if (tb_povtpass.Text == "******")
+            {
+                tb_povtpass.Clear();
+                tb_povtpass.ForeColor = Color.Black;
+            }
         }
 
        
