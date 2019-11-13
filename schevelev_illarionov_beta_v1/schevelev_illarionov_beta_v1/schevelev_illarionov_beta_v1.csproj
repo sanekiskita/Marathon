@@ -44,11 +44,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="adm_menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adm_menu.Designer.cs">
+      <DependentUpon>adm_menu.cs</DependentUpon>
+    </Compile>
     <Compile Include="begun_login.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="begun_login.Designer.cs">
       <DependentUpon>begun_login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Coord_menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Coord_menu.Designer.cs">
+      <DependentUpon>Coord_menu.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -127,8 +139,14 @@
     <Compile Include="UserControl1.Designer.cs">
       <DependentUpon>UserControl1.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="adm_menu.resx">
+      <DependentUpon>adm_menu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="begun_login.resx">
       <DependentUpon>begun_login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Coord_menu.resx">
+      <DependentUpon>Coord_menu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

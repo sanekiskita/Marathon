@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -38,14 +39,66 @@ namespace schevelev_illarionov_beta_v1
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if ((tb_email.Text != null) && (tb_Pass.Text == tb_povtpass.Text) && (tb_Pass.Text != null) && (tb_name.Text != null) && (tb_lastname.Text != null))
+            if ((tb_email.Text != "Введите email") && (tb_Pass.Text == tb_povtpass.Text) && (tb_Pass.Text != "******") && (tb_name.Text != null) && (tb_lastname.Text != null))
             {
 
+                try
+                {
 
-                this.Hide();
-                Runner_menu mn_r = new Runner_menu();
-                mn_r.Show();
+                  
+
+                        // MessageBox.Show("Jib,rf <!");
+                        string connectionString = null;
+                        SqlCommand cmd;
+                        SqlConnection con;
+                        string rol = "R";
+                        connectionString = ("Data Source=127.0.0.1;Initial Catalog=g464_Shevelev__Illarionov;User ID=student;Password=student");
+                        con = new SqlConnection(connectionString);
+                        con.Open();
+
+
+                        string connectionString2 = null;
+                        SqlCommand cmd2;
+                        SqlConnection con2;
+                       
+                        connectionString2 = ("Data Source=127.0.0.1;Initial Catalog=g464_Shevelev__Illarionov;User ID=student;Password=student");
+                        con2 = new SqlConnection(connectionString);
+                        con2.Open();
+
+                        cmd2 = new SqlCommand("Insert INTO [User](Email, Password, FirstName, LastName, RoleId) values(@email,@passw,@FN,@LN,@roll)", con);
+
+                        cmd2.Parameters.AddWithValue("@email", tb_email.Text);
+                        cmd2.Parameters.AddWithValue("@passw", tb_Pass.Text);
+                        cmd2.Parameters.AddWithValue("@FN", tb_name.Text);
+                        cmd2.Parameters.AddWithValue("@LN", tb_lastname.Text);
+                        cmd2.Parameters.AddWithValue("@roll", rol);
+
+                        cmd2.ExecuteNonQuery();
+                    //
+
+                        cmd = new SqlCommand("Insert INTO Runner(Email, Gender, DateOfBirth,CountryCode,Runner_img) values(@email,@gender,@Date,@cou,@img)", con);
+
+                        cmd.Parameters.AddWithValue("@email", tb_email.Text);
+                        cmd.Parameters.AddWithValue("@gender", comboBox1.SelectedValue);
+                        cmd.Parameters.AddWithValue("@date", dtp_day.Value);
+                        cmd.Parameters.AddWithValue("@cou", comboBox2.SelectedValue);
+                        cmd.Parameters.AddWithValue("@img", tb_file.Text);
+
+
+                        cmd.ExecuteNonQuery();
+
+
+                        this.Hide();
+                        Runner_menu mn_r = new Runner_menu();
+                        mn_r.Show();
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Ошибка данных!");
+                }
+                
             }
+                
             else
                 MessageBox.Show("Ошибка данных!");
         }
