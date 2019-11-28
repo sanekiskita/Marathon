@@ -47,7 +47,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(222, 84);
             this.button3.TabIndex = 70;
-            this.button3.Text = "Мой спонсор";
+            this.button3.Text = "Инвентарь";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // button4
@@ -56,7 +56,7 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(222, 84);
             this.button4.TabIndex = 69;
-            this.button4.Text = "Редактирование профиля";
+            this.button4.Text = "Благотворительные организации";
             this.button4.UseVisualStyleBackColor = true;
             // 
             // button2
@@ -65,7 +65,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(222, 84);
             this.button2.TabIndex = 68;
-            this.button2.Text = "Мои результаты";
+            this.button2.Text = "Волонтеры";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // button1
@@ -74,18 +74,18 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(222, 84);
             this.button1.TabIndex = 67;
-            this.button1.Text = "Регистрация на марафон";
+            this.button1.Text = "Пользователи";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(301, 53);
+            this.label2.Location = new System.Drawing.Point(258, 53);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(108, 20);
+            this.label2.Size = new System.Drawing.Size(194, 20);
             this.label2.TabIndex = 66;
-            this.label2.Text = "Admin menu";
+            this.label2.Text = "Меню администратора";
             // 
             // label14
             // 
@@ -116,6 +116,7 @@
             this.exit.TabIndex = 63;
             this.exit.Text = "Назад";
             this.exit.UseVisualStyleBackColor = true;
+            this.exit.Click += new System.EventHandler(this.exit_Click);
             // 
             // t
             // 
@@ -129,6 +130,7 @@
             this.btn_logout.TabIndex = 71;
             this.btn_logout.Text = "Logout";
             this.btn_logout.UseVisualStyleBackColor = true;
+            this.btn_logout.Click += new System.EventHandler(this.btn_logout_Click);
             // 
             // adm_menu
             // 

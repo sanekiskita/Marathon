@@ -42,5 +42,10 @@ namespace schevelev_illarionov_beta_v1
             label14.Text = t.Days.ToString() + Program.GetDeclension(Convert.ToInt32(t.Days.ToString()), " день ", " дня ", " дней ") + t.Hours.ToString() + Program.GetDeclension(Convert.ToInt32(t.Hours.ToString()), " час ", " часа ", " часов ") + t.Minutes.ToString() + Program.GetDeclension(Convert.ToInt32(t.Minutes.ToString()), " минута ", " минуты ", " минут ") + " до старта марафона!";
 
         }
+
+        private void label14_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

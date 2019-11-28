@@ -56,6 +56,12 @@
     <Compile Include="begun_login.Designer.cs">
       <DependentUpon>begun_login.cs</DependentUpon>
     </Compile>
+    <Compile Include="bez_sms_i_registracii.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bez_sms_i_registracii.Designer.cs">
+      <DependentUpon>bez_sms_i_registracii.cs</DependentUpon>
+    </Compile>
     <Compile Include="Coord_menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,6 +121,12 @@
     <Compile Include="Register as a runner4.Designer.cs">
       <DependentUpon>Register as a runner4.cs</DependentUpon>
     </Compile>
+    <Compile Include="Runner_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Runner_List.Designer.cs">
+      <DependentUpon>Runner_List.cs</DependentUpon>
+    </Compile>
     <Compile Include="Runner_menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,6 +145,12 @@
     <Compile Include="sponsor_a_runner6.Designer.cs">
       <DependentUpon>sponsor_a_runner6.cs</DependentUpon>
     </Compile>
+    <Compile Include="Sponsor_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sponsor_List.Designer.cs">
+      <DependentUpon>Sponsor_List.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControl1.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -144,6 +162,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="begun_login.resx">
       <DependentUpon>begun_login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bez_sms_i_registracii.resx">
+      <DependentUpon>bez_sms_i_registracii.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Coord_menu.resx">
       <DependentUpon>Coord_menu.cs</DependentUpon>
@@ -174,6 +195,9 @@
     </Compile>
     <EmbeddedResource Include="Register as a runner4.resx">
       <DependentUpon>Register as a runner4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Runner_List.resx">
+      <DependentUpon>Runner_List.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Runner_menu.resx">
       <DependentUpon>Runner_menu.cs</DependentUpon>

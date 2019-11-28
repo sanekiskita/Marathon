@@ -60,10 +60,16 @@ namespace schevelev_illarionov_beta_v1
                         }
                         if (role == "C")
                         {
+                            this.Hide();
+                            Coord_menu mn_r2 = new Coord_menu();
+                            mn_r2.Show();
                             //coordinatro
                         }
                         if (role == "A")
                         {
+                            this.Hide();
+                            adm_menu mn_r1 = new adm_menu();
+                            mn_r1.Show();
                            //administrator
                         }
                     }
@@ -94,6 +100,13 @@ namespace schevelev_illarionov_beta_v1
         {
             TimeSpan t = Program.start - DateTime.Now;
             label4.Text = t.Days.ToString() + Program.GetDeclension(Convert.ToInt32(t.Days.ToString()), " день ", " дня ", " дней ") + t.Hours.ToString() + Program.GetDeclension(Convert.ToInt32(t.Hours.ToString()), " час ", " часа ", " часов ") + t.Minutes.ToString() + Program.GetDeclension(Convert.ToInt32(t.Minutes.ToString()), " минута ", " минуты ", " минут ") + " до старта марафона!";
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            bez_sms_i_registracii free = new bez_sms_i_registracii();
+            free.Show();
         }
     }
 }

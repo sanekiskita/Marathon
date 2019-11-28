@@ -106,6 +106,7 @@
             this.label14.Size = new System.Drawing.Size(394, 20);
             this.label14.TabIndex = 55;
             this.label14.Text = "-- дней -- часов и -- минут до старта марафона!";
+            this.label14.Click += new System.EventHandler(this.label14_Click);
             // 
             // label1
             // 

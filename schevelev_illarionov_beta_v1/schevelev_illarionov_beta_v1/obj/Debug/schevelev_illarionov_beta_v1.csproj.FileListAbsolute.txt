@@ -17,3 +17,7 @@ C:\Users\user06\Documents\464\Shevelev and Illarionov\schevelev_illarionov_beta_
 C:\Users\user06\Documents\464\Shevelev and Illarionov\schevelev_illarionov_beta_v1\schevelev_illarionov_beta_v1\obj\Debug\schevelev_illarionov_beta_v1.UserControl1.resources
 C:\Users\user06\Documents\464\Shevelev and Illarionov\schevelev_illarionov_beta_v1\schevelev_illarionov_beta_v1\obj\Debug\schevelev_illarionov_beta_v1.Runner_menu.resources
 C:\Users\user06\Documents\464\Shevelev and Illarionov\schevelev_illarionov_beta_v1\schevelev_illarionov_beta_v1\obj\Debug\schevelev_illarionov_beta_v1.begun_login.resources
+C:\Users\user06\Documents\464\Shevelev and Illarionov\schevelev_illarionov_beta_v1\schevelev_illarionov_beta_v1\obj\Debug\schevelev_illarionov_beta_v1.adm_menu.resources
+C:\Users\user06\Documents\464\Shevelev and Illarionov\schevelev_illarionov_beta_v1\schevelev_illarionov_beta_v1\obj\Debug\schevelev_illarionov_beta_v1.Coord_menu.resources
+C:\Users\user06\Documents\464\Shevelev and Illarionov\schevelev_illarionov_beta_v1\schevelev_illarionov_beta_v1\obj\Debug\schevelev_illarionov_beta_v1.Runner_List.resources
+C:\Users\user06\Documents\464\Shevelev and Illarionov\schevelev_illarionov_beta_v1\schevelev_illarionov_beta_v1\obj\Debug\schevelev_illarionov_beta_v1.bez_sms_i_registracii.resources

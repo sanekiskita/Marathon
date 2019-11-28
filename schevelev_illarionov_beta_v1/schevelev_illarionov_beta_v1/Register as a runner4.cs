@@ -111,7 +111,7 @@ namespace schevelev_illarionov_beta_v1
             this.genderTableAdapter.Fill(this.g464_Shevelev__IllarionovDataSet1.Gender);
 
 
-            int mou = Convert.ToInt32(DateTime.Now.Month);
+          int mou = Convert.ToInt32(DateTime.Now.Month);
           int years = Convert.ToInt32(DateTime.Now.Year);
           int days = Convert.ToInt32(DateTime.Now.Day);
           years = years - 15;
@@ -215,6 +215,16 @@ namespace schevelev_illarionov_beta_v1
                 tb_povtpass.Clear();
                 tb_povtpass.ForeColor = Color.Black;
             }
+        }
+
+        private void dtp_day_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tb_Pass_TextChanged(object sender, EventArgs e)
+        {
+
         }
 
        

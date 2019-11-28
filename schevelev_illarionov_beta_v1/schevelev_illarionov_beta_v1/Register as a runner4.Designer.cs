@@ -113,6 +113,7 @@
             this.tb_Pass.PasswordChar = '*';
             this.tb_Pass.Size = new System.Drawing.Size(213, 20);
             this.tb_Pass.TabIndex = 55;
+            this.tb_Pass.TextChanged += new System.EventHandler(this.tb_Pass_TextChanged);
             this.tb_Pass.Enter += new System.EventHandler(this.tb_Pass_Enter);
             this.tb_Pass.Leave += new System.EventHandler(this.tb_Pass_Leave);
             // 
@@ -286,6 +287,7 @@
             this.dtp_day.Name = "dtp_day";
             this.dtp_day.Size = new System.Drawing.Size(149, 20);
             this.dtp_day.TabIndex = 79;
+            this.dtp_day.ValueChanged += new System.EventHandler(this.dtp_day_ValueChanged);
             // 
             // label6
             // 

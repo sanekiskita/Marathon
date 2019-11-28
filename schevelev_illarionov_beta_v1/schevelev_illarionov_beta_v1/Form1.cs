@@ -48,7 +48,9 @@ namespace schevelev_illarionov_beta_v1
 
         private void btn_login_Click(object sender, EventArgs e)
         {
-          
+            this.Hide();
+            begun_login login = new begun_login();
+            login.Show();
         }
 
         private void btn_begun_Click(object sender, EventArgs e)
