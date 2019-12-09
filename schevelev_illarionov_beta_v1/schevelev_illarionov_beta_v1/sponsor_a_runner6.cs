@@ -132,7 +132,7 @@ namespace schevelev_illarionov_beta_v1
                 {
                     int sum = Convert.ToInt32(maskedTextBox3.Text);
                     int sum2 = Convert.ToInt32(maskedTextBox2.Text);
-                    if (Convert.ToDouble(label13.Text) > 0  && Convert.ToInt32(maskedTextBox2.Text) >= Convert.ToInt32(mou)  && Convert.ToInt32(maskedTextBox3.Text) >= Convert.ToInt32(years))
+                    if (Convert.ToDouble(label13.Text) > 0  && ((Convert.ToInt32(maskedTextBox2.Text) >= Convert.ToInt32(mou) && Convert.ToInt32(maskedTextBox3.Text) == Convert.ToInt32(years)) || Convert.ToInt32(maskedTextBox3.Text) > Convert.ToInt32(years)))
                     {
 
                        // MessageBox.Show("Jib,rf <!");
